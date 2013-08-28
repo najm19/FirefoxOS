@@ -10,7 +10,11 @@ $sql="INSERT INTO Llamadas (numero, categoria, seudonimo, pais, comentarios)
 VALUES
 ('$_POST[numero]','$_POST[categoria]','$_POST[seudonimo]','$_POST[pais]','$_POST[comentario]')";
 
-mysqli_query($con,$sql) or die('Error. '.mysqli_error(con));
+if (!mysqli_query($con,$sql))
+  {
+  die('Error: ' . mysqli_error($con));
+  }
+echo "<script>alert('Gracias, tu llamada fue registrada exitosamente.'); location.href='index.html'</script>";
   
   mysqli_close($con);
 
