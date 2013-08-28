@@ -1,0 +1,12 @@
+NOTAS:
+
+La idea es que en el input de Número se puedan cargar las llamadas entrantes.
+Por ahora el botón buscar carga todos los registros. Falta agregar condición a ese botón para que solo consulte por numero.
+
+Cuando encuentre un registro: Compartir por Facebook, Twitter, Email
+
+Cambios a diseño (adaptativo)
+
+Corregir inserción en Mysql con javascript
+
+Validaciones de campos en javascript
